@@ -14,8 +14,7 @@ public class Principal {
         meuFilme.avaliaFilme(6);
         meuFilme.avaliaFilme(7);
         meuFilme.avaliaFilme(10);
-        System.out.println(meuFilme.somaAvaliacoes);
-        System.out.println(meuFilme.totalAvaliacoes);
+        System.out.println(meuFilme.getTotalAvaliacoes());
 
         System.out.println(String.format("Média das avaliações: %.2f", meuFilme.calculaMedia()));
     }

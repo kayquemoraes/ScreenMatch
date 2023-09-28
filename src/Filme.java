@@ -4,7 +4,7 @@ public class Filme {
     int anoDeLancamento;
     boolean incluidoNoPlano;
     private double somaAvaliacoes;
-    private  int totalAvaliacoes;
+    private int totalAvaliacoes;
     int duracaoEmMinutos;
 
     // Métodos
@@ -23,5 +23,9 @@ public class Filme {
 
     double calculaMedia() {
         return somaAvaliacoes / totalAvaliacoes;
+    }
+
+    int getTotalAvaliacoes() {
+        return totalAvaliacoes;
     }
 }
