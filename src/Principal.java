@@ -7,10 +7,9 @@ public class Principal {
         Filme meuFilme = new Filme();
 
         // Atribuir valores ao objeto "meuFilme" com base nos atributos da classe "br.com.alura.screenmatch.modelos.Filme"
-        meuFilme.nome = "Efeito borboleta";
-        meuFilme.anoDeLancamento = 2004;
-        meuFilme.duracaoEmMinutos = 120;
-
+        meuFilme.setNome("Efeito borboleta");
+        meuFilme.setAnoDeLancamento(2004);
+        meuFilme.setDuracaoEmMinutos(120);
         meuFilme.exibeFicha();
 
         meuFilme.avaliaFilme(6);
