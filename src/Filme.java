@@ -3,8 +3,8 @@ public class Filme {
     String nome;
     int anoDeLancamento;
     boolean incluidoNoPlano;
-    double somaAvaliacoes;
-    int totalAvaliacoes;
+    private double somaAvaliacoes;
+    private  int totalAvaliacoes;
     int duracaoEmMinutos;
 
     // Métodos
