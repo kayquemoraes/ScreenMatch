@@ -1,6 +1,8 @@
+package br.com.alura.screenmatch.modelos;
+
 public class Filme {
     // Atributos
-    String nome;
+    public String nome;
     int anoDeLancamento;
     boolean incluidoNoPlano;
     private double somaAvaliacoes;
@@ -8,7 +10,7 @@ public class Filme {
     int duracaoEmMinutos;
 
     // Métodos
-    void exibeFicha() {
+    public void exibeFicha() {
         System.out.println(String.format("""
                 Filme: %s
                 Ano de lançamento: %d
@@ -16,16 +18,16 @@ public class Filme {
                 """, nome, anoDeLancamento, duracaoEmMinutos));
     }
 
-    void avaliaFilme(double nota) {
+    public void avaliaFilme(double nota) {
         somaAvaliacoes += nota;
         totalAvaliacoes++;
     }
 
-    double calculaMedia() {
+    public double calculaMedia() {
         return somaAvaliacoes / totalAvaliacoes;
     }
 
-    int getTotalAvaliacoes() {
+    public int getTotalAvaliacoes() {
         return totalAvaliacoes;
     }
 }

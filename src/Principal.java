@@ -1,10 +1,12 @@
+import br.com.alura.screenmatch.modelos.Filme;
+
 public class Principal {
     public static void main(String[] args) {
 
         // Instanciar objeto
         Filme meuFilme = new Filme();
 
-        // Atribuir valores ao objeto "meuFilme" com base nos atributos da classe "Filme"
+        // Atribuir valores ao objeto "meuFilme" com base nos atributos da classe "br.com.alura.screenmatch.modelos.Filme"
         meuFilme.nome = "Efeito borboleta";
         meuFilme.anoDeLancamento = 2004;
         meuFilme.duracaoEmMinutos = 120;
