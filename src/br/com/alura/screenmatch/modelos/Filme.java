@@ -32,6 +32,22 @@ public class Filme {
         return totalAvaliacoes;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
+    }
+
+    public boolean isIncluidoNoPlano() {
+        return incluidoNoPlano;
+    }
+
+    public int getDuracaoEmMinutos() {
+        return duracaoEmMinutos;
+    }
+
     //Setters
     public void setNome(String nome) {
         this.nome = nome;
