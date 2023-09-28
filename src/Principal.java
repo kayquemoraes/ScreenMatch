@@ -9,10 +9,14 @@ public class Principal {
         meuFilme.anoDeLancamento = 2004;
         meuFilme.duracaoEmMinutos = 120;
 
-        System.out.println(String.format("""
-                Filme: %s
-                Ano de lançamento: %d
-                Duração: %d minutos
-                """, meuFilme.nome, meuFilme.anoDeLancamento, meuFilme.duracaoEmMinutos));
+        meuFilme.exibeFicha();
+
+        meuFilme.avaliaFilme(6);
+        meuFilme.avaliaFilme(7);
+        meuFilme.avaliaFilme(10);
+        System.out.println(meuFilme.somaAvaliacoes);
+        System.out.println(meuFilme.totalAvaliacoes);
+
+        System.out.println(String.format("Média das avaliações: %.2f", meuFilme.calculaMedia()));
     }
 }
