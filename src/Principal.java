@@ -23,7 +23,10 @@ public class Principal {
         Serie theBoys = new Serie();
         theBoys.setNome("The Boys");
         theBoys.setAnoDeLancamento(2019);
-        theBoys.exibeFicha();
         theBoys.setTemporadas(3);
+        theBoys.setEpisodiosPorTemporada(10);
+        theBoys.setMinutosPorEpisodio(50);
+        System.out.println(theBoys.getDuracaoEmMinutos());
+        theBoys.exibeFicha();
     }
 }

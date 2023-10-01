@@ -37,4 +37,9 @@ public class Serie extends Midia {
     public void setMinutosPorEpisodio(int minutosPorEpisodio) {
         this.minutosPorEpisodio = minutosPorEpisodio;
     }
+
+    @Override
+    public int getDuracaoEmMinutos() {
+        return minutosPorEpisodio * episodiosPorTemporada * temporadas;
+    }
 }
