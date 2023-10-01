@@ -1,4 +1,7 @@
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
+import br.com.alura.screenmatch.calculos.Classificavel;
+import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
+import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
@@ -41,5 +44,15 @@ public class Principal {
         calculadora.inclui(outroFilme);
         calculadora.inclui(theBoys);
         System.out.println(calculadora.getTempoTotal());
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        outroFilme.avaliaFilme(6);
+        filtro.filtra(outroFilme);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setSerie(theBoys);
+        episodio.setTotalVizualizacoes(300);
+        filtro.filtra(episodio);
     }
 }
