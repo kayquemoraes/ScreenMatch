@@ -1,4 +1,5 @@
 import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -18,5 +19,11 @@ public class Principal {
         System.out.println(meuFilme.getTotalAvaliacoes());
 
         System.out.println(String.format("Média das avaliações: %.2f", meuFilme.calculaMedia()));
+
+        Serie theBoys = new Serie();
+        theBoys.setNome("The Boys");
+        theBoys.setAnoDeLancamento(2019);
+        theBoys.exibeFicha();
+        theBoys.setTemporadas(3);
     }
 }
