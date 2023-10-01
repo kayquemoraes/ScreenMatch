@@ -42,4 +42,8 @@ public class Serie extends Midia {
     public int getDuracaoEmMinutos() {
         return minutosPorEpisodio * episodiosPorTemporada * temporadas;
     }
+
+    public void setDuracaoEmMinutos() {
+        super.setDuracaoEmMinutos(getDuracaoEmMinutos());
+    }
 }

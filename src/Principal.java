@@ -1,3 +1,4 @@
+import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
@@ -27,6 +28,18 @@ public class Principal {
         theBoys.setEpisodiosPorTemporada(10);
         theBoys.setMinutosPorEpisodio(50);
         System.out.println(theBoys.getDuracaoEmMinutos());
+        theBoys.setDuracaoEmMinutos();
         theBoys.exibeFicha();
+
+        Filme outroFilme = new Filme();
+        outroFilme.setNome("Ilha do medo");
+        outroFilme.setAnoDeLancamento(2010);
+        outroFilme.setDuracaoEmMinutos(138);
+
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(meuFilme);
+        calculadora.inclui(outroFilme);
+        calculadora.inclui(theBoys);
+        System.out.println(calculadora.getTempoTotal());
     }
 }
